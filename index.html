@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <ul class="controls">
+          <li class="left">
+            <div class="icons">
+              <!-- <button id="from-volume-btn">
+                <i id="from-volume-icon" class="fas fa-volume-up"></i>
+              </button> -->
+              <button id="from-copy-btn">
+                <i id="from-copy-icon" class="fas fa-copy"></i>
+              </button>
+            </div>
+            <select id="from-lang"></select>
+          </li>
+          <li class="middle">
+            <button id="changeLangandText">
+              <i class="fas fa-exchange-alt"></i>
+            </button>
+          </li>
+          <li class="right">
+            <div class="icons">
+              <!-- <button id="to-volume-btn">
+                <i id="to-volume-icon" class="fas fa-volume-up"></i>
+              </button> -->
+              <button id="to-copy-btn">
+                <i id="to-copy-icon" class="fas fa-copy"></i>
+              </button>
+            </div>
+            <select id="to-lang"></select>
+          </li>
+        </ul>
+        <div class="text-controls">
+          <textarea
+            id="from-text"
+            class="from-text"
+            placeholder="Add text"
+          ></textarea>
+          <textarea
+            id="to-text"
+            class="to-text"
+            placeholder="Translate"
+            readonly
+            disabled
+          ></textarea>
+        </div>
+      </div>
+      <button id="btn-translate">Translate</button>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
